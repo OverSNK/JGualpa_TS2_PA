@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JGualpa_TS2_PA.Views.vCalificaciones"
+             Title="vCalificaciones">
+    <VerticalStackLayout>
+        <Label Text="Sistema de Calificaciones UISRAEL" FontSize="30" HorizontalOptions="Center"/>
+
+        <Picker x:Name="estudiantePicker" Title="Selecciona un estudiante">
+            <Picker.Items>
+                <x:String>Laura Sevilla</x:String>
+                <x:String>Patricio Encalada</x:String>
+                <x:String>Alberto Siguenza</x:String>
+                <x:String>Leandro Padilla</x:String>
+                <x:String>Luis Santamarín</x:String>
+            </Picker.Items>
+        </Picker>
+
+        <Entry x:Name="seguimiento1Entry" Placeholder="Nota Seguimiento 1 (0-10)" Keyboard="Numeric"/>
+        <Entry x:Name="examen1Entry" Placeholder="Examen 1 (0-10)" Keyboard="Numeric"/>
+
+        <Entry x:Name="seguimiento2Entry" Placeholder="Nota Seguimiento 2 (0-10)" Keyboard="Numeric"/>
+        <Entry x:Name="examen2Entry" Placeholder="Examen 2 (0-10)" Keyboard="Numeric"/>
+
+        <DatePicker x:Name="fechaPicker" />
+
+        <Button Text="Calcular Nota Final" Clicked="Button_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>
