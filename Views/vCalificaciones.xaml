@@ -4,7 +4,10 @@
              x:Class="JGualpa_TS2_PA.Views.vCalificaciones"
              Title="vCalificaciones">
     <VerticalStackLayout>
-        <Label Text="Sistema de Calificaciones UISRAEL" FontSize="30" HorizontalOptions="Center"/>
+        <Label Text="Sistema de Calificaciones" FontSize="30" HorizontalOptions="Center"/>
+        <Image Source="uisrael.jpg"
+               WidthRequest="200"/>
+        <Label x:Name="lblUsuario"></Label>
 
         <Picker x:Name="estudiantePicker" Title="Selecciona un estudiante">
             <Picker.Items>

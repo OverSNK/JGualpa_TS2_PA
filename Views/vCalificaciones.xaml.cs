@@ -6,7 +6,11 @@ public partial class vCalificaciones : ContentPage
 	{
 		InitializeComponent();
 	}
-
+    public vCalificaciones(string usuario)
+    {
+        InitializeComponent();
+        lblUsuario.Text = $"Usuario conectado: {usuario}";
+    }
     private async void Button_Clicked(object sender, EventArgs e)
     {
         // Validar selección de estudiante
